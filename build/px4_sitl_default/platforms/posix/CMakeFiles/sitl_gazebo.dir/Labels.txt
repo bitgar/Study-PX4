@@ -1,0 +1,13 @@
+# Target labels
+ sitl_gazebo
+# Source files and their labels
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/platforms/posix/CMakeFiles/sitl_gazebo
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/platforms/posix/CMakeFiles/sitl_gazebo.rule
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/platforms/posix/CMakeFiles/sitl_gazebo-complete.rule
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/external/Stamp/sitl_gazebo/sitl_gazebo-install.rule
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/external/Stamp/sitl_gazebo/sitl_gazebo-mkdir.rule
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/external/Stamp/sitl_gazebo/sitl_gazebo-download.rule
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/external/Stamp/sitl_gazebo/sitl_gazebo-update.rule
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/external/Stamp/sitl_gazebo/sitl_gazebo-patch.rule
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/external/Stamp/sitl_gazebo/sitl_gazebo-configure.rule
+/home/bitgar/PX4-Autopilot/build/px4_sitl_default/external/Stamp/sitl_gazebo/sitl_gazebo-build.rule

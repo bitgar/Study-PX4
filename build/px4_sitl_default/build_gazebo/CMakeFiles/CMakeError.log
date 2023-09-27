@@ -1,0 +1,41 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/bitgar/PX4-Autopilot/build/px4_sitl_default/build_gazebo/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_896d3"
+[1/2] Building C object CMakeFiles/cmTC_896d3.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_896d3
+FAILED: cmTC_896d3 
+: && /usr/bin/cc    CMakeFiles/cmTC_896d3.dir/CheckSymbolExists.c.o  -o cmTC_896d3   && :
+CMakeFiles/cmTC_896d3.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/bitgar/PX4-Autopilot/build/px4_sitl_default/build_gazebo/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/bitgar/PX4-Autopilot/build/px4_sitl_default/build_gazebo/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_e6524"
+[1/2] Building C object CMakeFiles/cmTC_e6524.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e6524
+FAILED: cmTC_e6524 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_e6524.dir/CheckFunctionExists.c.o  -o cmTC_e6524  -lpthreads && :
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+

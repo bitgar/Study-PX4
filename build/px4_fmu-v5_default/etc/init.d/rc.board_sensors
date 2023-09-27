@@ -1,0 +1,8 @@
+board_adc start
+icm20602 -s -R 2 -q start
+icm20689 -s -R 2 start
+bmi055 -A -R 2 -s start
+bmi055 -G -R 2 -s start
+ms5611 -s start
+ist8310 -I -R 10 start
+ist8310 -X -b 1 -R 10 start

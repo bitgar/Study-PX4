@@ -1,0 +1,4 @@
+bool "ZZC PX4 Simple app"
+ default n
+ ---help---
+     Enable ZZC PX4 simple app
